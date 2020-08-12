@@ -20,11 +20,13 @@ PROMPT="${FG[129]}╭─|%{$reset_color%}${user_host}${clock}${current_dir}${git
 ${FG[129]}╰─|%{$reset_color%}${FG[220]} %B${user_symbol}%b "
 RPROMPT="%B${return_code}%b"
 
+# ❌ ✘
+# ✅ ✔
 
 ZSH_THEME_GIT_PROMPT_PREFIX="${FG[220]}(%{$reset_color%} ${FG[207]}%B"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%b${FG[220]})%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$reset_color%}${FG[160]}✘%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=" %{$reset_color%}${FG[082]}✔%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$reset_color%}${FG[160]}❌%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=" %{$reset_color%}${FG[082]}✅%{$reset_color%}"
 
 ZSH_THEME_GIT_PROMPT_ADDED="${FG[082]}✚%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_MODIFIED="${FG[166]}✹%{$reset_color%}"
