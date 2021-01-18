@@ -11,6 +11,7 @@ In order to install:
 ![GitHub](https://img.shields.io/github/license/leguim-repo/mike-was-here-theme)
 ![GitHub repo size](https://img.shields.io/github/repo-size/leguim-repo/mike-was-here-theme)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/leguim-repo/mike-was-here-theme)
+
 ---
 <!-- Pit i Collons -->
-![Coded in Barcelona](codedinbcn.png "Coded in Barcelona")
+![Coded In Barcelona](https://raw.githubusercontent.com/leguim-repo/leguim-repo/master/img/currentfooter.png)
