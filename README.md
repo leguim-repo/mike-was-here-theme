@@ -1,6 +1,8 @@
 # mike-was-here-theme for oh-my-zsh
 
-My personal configuration for oh-my-zsh  
+My personal configuration for oh-my-zsh.  
+
+![theme screenshoot](theme-screenshoot.png)
 
 In order to install:  
 
