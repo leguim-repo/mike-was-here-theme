@@ -2,7 +2,11 @@
 
 My personal configuration for oh-my-zsh.  
 
+For standard user looks as follow:  
 ![theme screenshoot](theme-screenshoot.png)
+
+For root user looks:  
+![theme screenshoot](theme-screenshoot-root.png)
 
 In order to install:  
 
