@@ -16,17 +16,30 @@ function virtualenv_prompt_info(){
 echo "${ZSH_THEME_VIRTUALENV_PREFIX:=🧪}"
 }
 
+function get_platform(){
+case "$OSTYPE" in
+  solaris*) echo "🌞" ;;
+  darwin*)  echo "🍏" ;; 
+  linux*)   echo "🧬" ;;
+  bsd*)     echo "🍎" ;;
+  msys*)    echo "🦠" ;;
+  cygwin*)  echo "🥦" ;;
+  *)        echo "🎲" ;;
+esac
+}
+
 local current_dir='%{$terminfo[bold]$FG[135]%}%~ %{$reset_color%}'
 local git_branch='$(git_prompt_info)'
 local rvm_ruby='$(ruby_prompt_info)'
 local venv_prompt='$(virtualenv_prompt_info)'
+local cpu='$(get_platform)'
 
 ZSH_THEME_RVM_PROMPT_OPTIONS="i v g"
 
 local clock='%{$terminfo[bold]$fg[blue]%}%D{[%X]} %{$reset_color%}'
 
 PROMPT="${FG[129]}╭─|%{$reset_color%}${user_host}${clock}${current_dir}${git_branch}
-${FG[129]}╰─|${venv_prompt}%{$reset_color%}${FG[220]}%B${user_symbol}%b${FG[129]} ├─➤%{$reset_color%} "
+${FG[129]}╰─|${venv_prompt}%{$reset_color%}${FG[220]}%B ${user_symbol}%b${FG[129]} ${cpu} ├─➤%{$reset_color%} "
 RPROMPT="%B${return_code}%b"
 
 # ❌ ✘
