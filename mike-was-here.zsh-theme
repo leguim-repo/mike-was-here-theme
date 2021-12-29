@@ -20,7 +20,7 @@ function get_platform(){
 case "$OSTYPE" in
   solaris*) echo "🌞" ;;
   darwin*)  echo "🍏" ;; 
-  linux*)   echo "🧬" ;;
+  linux*)   echo "🐧" ;;
   bsd*)     echo "🍎" ;;
   msys*)    echo "🦠" ;;
   cygwin*)  echo "🥦" ;;
